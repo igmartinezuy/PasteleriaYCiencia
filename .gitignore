@@ -1,0 +1,9 @@
+# Credenciales — nunca a GitHub
+.env.local
+.env
+.env.production
+credenciales-pasteleria.txt
+
+# Sistema
+.DS_Store
+node_modules/
