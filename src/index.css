@@ -1,42 +1,23 @@
 @import "tailwindcss";
 
-/* ================================================
-   DESIGN TOKENS — Pastelería & Ciencia
-   ================================================ */
 :root {
-  --bg:      #0B0B0B;
-  --bg-1:    #111111;
-  --bg-2:    #16110F;
-  --bg-3:    #1C1410;
-  --c1:      #3B2419;
-  --c2:      #4A2C1D;
-  --c3:      #5C3A21;
-  --cream:   #F4EDE4;
-  --cream-2: #E7D8C9;
-  --cream-3: #D9C2A7;
-  --gold:    #C58B55;
-  --gold-2:  #D4A373;
+  --bg: #FAF7F4;
+  --bg-warm: #F3EDE6;
+  --bg-dark: #2C1A0E;
+  --choco: #2C1A0E;
+  --rose: #C4846A;
+  --rose-2: #D9A08A;
+  --rose-pale: #F2E0D8;
+  --cream: #FAF7F4;
+  --cream-2: #F3EDE6;
+  --text: #2C1A0E;
+  --text-2: rgba(44,26,14,0.58);
+  --text-3: rgba(44,26,14,0.35);
+  --border: rgba(44,26,14,0.09);
+  --border-2: rgba(44,26,14,0.17);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'DM Sans', system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--cream);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  min-height: 100vh;
-  width: 100%;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Montserrat, system-ui, sans-serif; background: #FAF7F4; color: #2C1A0E; -webkit-font-smoothing: antialiased; }
+#root { min-height: 100vh; width: 100%; }
