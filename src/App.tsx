@@ -2,6 +2,10 @@ import './index.css'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
 import Marquee from './components/sections/Marquee'
+import Stats from './components/sections/Stats'
+import About from './components/sections/About'
+import Metodo from './components/sections/Metodo'
+import Cursos from './components/sections/Cursos'
 
 function App() {
   return (
@@ -9,6 +13,10 @@ function App() {
       <Navbar />
       <Hero />
       <Marquee />
+      <Stats />
+      <About />
+      <Metodo />
+      <Cursos />
     </div>
   )
 }
