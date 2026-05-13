@@ -1,6 +1,6 @@
 export default function Stats() {
   const stats = [
-    { n: '3.2k', label: 'Alumnos formados' },
+    { n: '32k', label: 'Alumnos formados' },
     { n: '12', label: 'Cursos especializados' },
     { n: '98%', label: 'Satisfaccion general' },
     { n: '4+', label: 'Anos de trayectoria' },
