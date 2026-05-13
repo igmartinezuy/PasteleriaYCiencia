@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* ================================================
+   DESIGN TOKENS — Pastelería & Ciencia
+   ================================================ */
+:root {
+  --bg:      #0B0B0B;
+  --bg-1:    #111111;
+  --bg-2:    #16110F;
+  --bg-3:    #1C1410;
+  --c1:      #3B2419;
+  --c2:      #4A2C1D;
+  --c3:      #5C3A21;
+  --cream:   #F4EDE4;
+  --cream-2: #E7D8C9;
+  --cream-3: #D9C2A7;
+  --gold:    #C58B55;
+  --gold-2:  #D4A373;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
