@@ -1,7 +1,7 @@
 export default function Sponsors() {
   return (
     <div style={{ background: '#FFFFFF', borderTop: '1px solid rgba(44,26,14,0.08)', borderBottom: '1px solid rgba(44,26,14,0.08)', padding: '56px 80px' }}>
-      <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(44,26,14,0.35)', textAlign: 'center', marginBottom: 44 }}>
+      <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(29,29,27,0.32)', textAlign: 'center', marginBottom: 44 }}>
         Marcas con las que trabajamos
       </p>
       <div style={{ maxWidth: 860, margin: '0 auto' }}>

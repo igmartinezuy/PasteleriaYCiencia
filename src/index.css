@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #FAF7F4;
-  --bg-warm: #F3EDE6;
-  --bg-dark: #2C1A0E;
-  --choco: #2C1A0E;
-  --rose: #C4846A;
-  --rose-2: #D9A08A;
-  --rose-pale: #F2E0D8;
-  --cream: #FAF7F4;
-  --cream-2: #F3EDE6;
-  --text: #2C1A0E;
-  --text-2: rgba(44,26,14,0.58);
-  --text-3: rgba(44,26,14,0.35);
-  --border: rgba(44,26,14,0.09);
-  --border-2: rgba(44,26,14,0.17);
+  --bg: #F7F6F4;
+  --bg-warm: #F0EDE8;
+  --bg-dark: #1D1D1B;
+  --choco: #1D1D1B;
+  --rose: #1B7BA0;
+  --rose-2: #6BA3BC;
+  --rose-pale: #E3EFF5;
+  --cream: #F7F6F4;
+  --cream-2: #F0EDE8;
+  --text: #1D1D1B;
+  --text-2: rgba(29,29,27,0.55);
+  --text-3: rgba(29,29,27,0.32);
+  --border: rgba(29,29,27,0.09);
+  --border-2: rgba(29,29,27,0.17);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: Montserrat, system-ui, sans-serif; background: #FAF7F4; color: #2C1A0E; -webkit-font-smoothing: antialiased; }
+body { font-family: Montserrat, system-ui, sans-serif; background: #F7F6F4; color: #1D1D1B; -webkit-font-smoothing: antialiased; }
 #root { min-height: 100vh; width: 100%; }
