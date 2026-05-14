@@ -8,6 +8,8 @@ import Metodo from './components/sections/Metodo'
 import Cursos from './components/sections/Cursos'
 import Testimonios from './components/sections/Testimonios'
 import CTAContacto from './components/sections/CTAContacto'
+import YouTube from './components/sections/YouTube'
+import Newsletter from './components/sections/Newsletter'
 import Asesoria from './components/sections/Asesoria'
 import Sponsors from './components/sections/Sponsors'
 import Footer from './components/layout/Footer'
@@ -24,6 +26,8 @@ function App() {
       <Cursos />
       <Testimonios />
       <CTAContacto />
+      <YouTube />
+      <Newsletter />
       <Asesoria />
       <Sponsors />
       <Footer />
