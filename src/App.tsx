@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+import Dashboard from './Dashboard'
 import './index.css'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/sections/Hero'
@@ -14,9 +16,9 @@ import Asesoria from './components/sections/Asesoria'
 import Sponsors from './components/sections/Sponsors'
 import Footer from './components/layout/Footer'
 
-function App() {
+function MainSite() {
   return (
-    <div>
+    <div style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <Navbar />
       <Hero />
       <Marquee />
@@ -35,4 +37,8 @@ function App() {
   )
 }
 
-export default App
+export default function App() {
+  const isDashboard = window.location.pathname === '/admin';
+  if (isDashboard) return <Dashboard />;
+  return <MainSite />;
+}
