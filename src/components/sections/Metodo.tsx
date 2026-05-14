@@ -6,8 +6,8 @@ export default function Metodo() {
     { n: '04', name: 'Comunidad activa', desc: 'Red de profesionales en constante crecimiento' },
   ];
   return (
-    <section id='metodo' style={{ background: '#1D1D1B', padding: '120px 80px' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 96, alignItems: 'center' }}>
+    <section id='metodo' style={{ background: '#1D1D1B', padding: 'clamp(60px, 8vw, 120px) clamp(20px, 5vw, 80px)' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 48, alignItems: 'center' }}>
         <div>
           <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#6BA3BC', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 12 }}>
             <span style={{ width: 28, height: 1.5, background: '#6BA3BC', display: 'inline-block' }} />
@@ -39,7 +39,7 @@ export default function Metodo() {
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
             />
           </div>
-          <div style={{ position: 'absolute', bottom: 32, left: -32, background: '#1B7BA0', color: 'white', padding: '24px 28px', borderRadius: 14, maxWidth: 240 }}>
+          <div style={{ position: 'absolute', bottom: 32, left: 0, background: '#1B7BA0', color: 'white', padding: '24px 28px', borderRadius: 14, maxWidth: 240 }}>
             <p style={{ fontSize: 15, fontStyle: 'italic', fontWeight: 300, lineHeight: 1.5, marginBottom: 10 }}>
               No ensenamos recetas. Ensenamos a entender el chocolate.
             </p>
