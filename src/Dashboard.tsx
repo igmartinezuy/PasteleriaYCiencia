@@ -1,4 +1,18 @@
 import { useState, useEffect } from 'react';
+
+type Lead = {
+  id: string;
+  created_at: string;
+  nombre: string;
+  email: string;
+  pais: string;
+  tipo_asesoria: string;
+  proyecto: string;
+  facturacion: string;
+  estado: string;
+};
+
+type EstadoKey = 'nuevo' | 'calificado' | 'propuesta' | 'cerrado' | 'perdido';
 import { supabase } from './lib/supabase';
 
 const PASSWORD = 'pyc2024admin';
@@ -6,7 +20,7 @@ const PASSWORD = 'pyc2024admin';
 export default function Dashboard() {
   const [auth, setAuth] = useState(false);
   const [input, setInput] = useState('');
-  const [leads, setLeads] = useState([]);
+  const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(false);
   const [filtro, setFiltro] = useState('todos');
 
@@ -24,11 +38,11 @@ export default function Dashboard() {
   }, [auth]);
 
   const estados = ['todos', 'nuevo', 'calificado', 'propuesta', 'cerrado', 'perdido'];
-  const colores = { nuevo: '#1B7BA0', calificado: '#27ae60', propuesta: '#f39c12', cerrado: '#1D1D1B', perdido: '#e74c3c' };
+  const colores: Record<EstadoKey, string> = { nuevo: '#1B7BA0', calificado: '#27ae60', propuesta: '#f39c12', cerrado: '#1D1D1B', perdido: '#e74c3c' };
 
   const leadsFiltrados = filtro === 'todos' ? leads : leads.filter(l => l.estado === filtro);
 
-  const updateEstado = async (id, estado) => {
+  const updateEstado = async (id: string, estado: string) => {
     await supabase.from('leads').update({ estado }).eq('id', id);
     setLeads(leads.map(l => l.id === id ? { ...l, estado } : l));
   };

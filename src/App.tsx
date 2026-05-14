@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React from 'react'
 import Dashboard from './Dashboard'
 import './index.css'
 import Navbar from './components/layout/Navbar'
