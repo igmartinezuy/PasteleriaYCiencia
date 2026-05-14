@@ -26,13 +26,17 @@ export default function YouTube() {
             Ver canal →
           </a>
         </div>
-        <div style={{ width: '100%', aspectRatio: '16/9', borderRadius: 16, overflow: 'hidden', background: '#E3EFF5', position: 'relative', cursor: 'pointer' }} onClick={() => window.open('https://www.youtube.com/@matiasdragun83', '_blank')}>
-          <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
-            <div style={{ width: 64, height: 64, borderRadius: '50%', background: '#1B7BA0', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(27,123,160,0.35)' }}>
-              <svg width='24' height='24' viewBox='0 0 24 24' fill='white'><path d='M8 5v14l11-7z'/></svg>
-            </div>
-            <span style={{ fontSize: 13, fontWeight: 500, color: 'rgba(29,29,27,0.55)' }}>Ver en YouTube</span>
-          </div>
+        <div style={{ width: '100%', aspectRatio: '16/9', borderRadius: 16, overflow: 'hidden', boxShadow: '0 16px 48px rgba(0,0,0,0.12)' }}>
+          <iframe
+            width='100%'
+            height='100%'
+            src='https://www.youtube.com/embed/Oj4WrdLUyVo'
+            title='Pastelería & Ciencia'
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowFullScreen
+            style={{ display: 'block', width: '100%', height: '100%' }}
+          />
         </div>
       </div>
     </section>
