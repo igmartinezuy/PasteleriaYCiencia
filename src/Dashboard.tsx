@@ -127,7 +127,7 @@ export default function Dashboard() {
                     <td style={{ padding: '14px 20px', fontSize: 13, color: 'rgba(29,29,27,0.55)', maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{lead.proyecto}</td>
                     <td style={{ padding: '14px 20px', fontSize: 12, color: 'rgba(29,29,27,0.4)' }}>{new Date(lead.created_at).toLocaleDateString('es-AR')}</td>
                     <td style={{ padding: '14px 20px' }}>
-                      <select value={lead.estado || 'nuevo'} onChange={e => updateEstado(lead.id, e.target.value)} style={{ fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 100, border: '1.5px solid', borderColor: colores[lead.estado] || '#1B7BA0', color: colores[lead.estado] || '#1B7BA0', background: 'white', cursor: 'pointer', outline: 'none', fontFamily: 'Montserrat, sans-serif' }}>
+                      <select value={lead.estado || 'nuevo'} onChange={e => updateEstado(lead.id, e.target.value)} style={{ fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 100, border: '1.5px solid', borderColor: colores[lead.estado as EstadoKey] || '#1B7BA0', color: colores[lead.estado as EstadoKey] || '#1B7BA0', background: 'white', cursor: 'pointer', outline: 'none', fontFamily: 'Montserrat, sans-serif' }}>
                         {['nuevo', 'calificado', 'propuesta', 'cerrado', 'perdido'].map(e => <option key={e} value={e}>{e}</option>)}
                       </select>
                     </td>
